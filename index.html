@@ -1,0 +1,72 @@
+<html ng-app="TodoApp">
+<head>
+	<title> My Todo App </title>
+	<meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="todoApp.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="appname.service.js"></script>
+    <script src="appConfig.service.js"></script>
+	<script src="task.controller.js"></script>
+	<script src="taskdata.service.js"></script>
+</head>
+
+<body>
+	<div class="container" ng-controller="TaskCtrl as ctrl">
+		<p id="heading">To-Do List</p>
+		<!-- Textbox for todo --> 
+		
+		<br/>
+		<input type="text" id="taskToBeAdded" placeholder="To-do" ng-show="ctrl.editMode" ng-model="ctrl.selectedTask.name"> 
+
+		<button id="addTaskToTaskList" ng-hide="ctrl.editMode" ng-click="ctrl.addTask()"> Click here to add a task </button>
+
+		<!-- Button -->
+		
+
+		<button id="saveTaskToTaskList" ng-show="ctrl.editMode" ng-click="ctrl.saveTask()"> ADD/SAVE </button>
+		<br/><br/>		
+		
+
+		<!-- Tasks -->
+		<div id="newTaskDiv">
+			Tasks:
+			<ul id="newTaskAddHere">
+				<!-- New tasks are written here -->
+				<li class="list-group-item" ng-repeat="task in ctrl.tasks" ng-click="ctrl.selectTask($index)">
+					<span> 
+						<input type="checkbox" ng-model="deleted">
+						<span ng-class="{strikeThru: deleted}" ng-model="deleteParam" > {{task.name }} </span>
+						<a id="deleteButton" ng-hide"ctrl.editMode" ng-click="deleteCall()"> Delete </a>
+						<a id="editButton" ng-hide="ctrl.editMode" ng-click="ctrl.toggleEditMode()"> Edit </a>
+					</span>
+				</li>
+				
+			</ul>
+		</div><br/>
+		<div class="alert alert-success" ng-if="ctrl.successMessage"> {{ctrl.successMessage}} </div>
+		<div class="alert alert-danger" ng-if="ctrl.errorMessage"> {{ctrl.errorMessage}} </div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

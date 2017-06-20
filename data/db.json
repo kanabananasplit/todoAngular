@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "gender": "female",
+      "name": "Task 1",
+      "location": {
+        "street": "3974 avenue de l'abbé-roussel",
+        "city": "bremblens",
+        "state": "appenzell ausserrhoden",
+        "postcode": 2551
+      },
+      "email": "ambre.marchand@example.com",
+      "login": {
+        "username": "bigelephant866",
+        "password": "reilly",
+        "salt": "ricI2bJa",
+        "md5": "2dd29b20e43bc5b358702011f4478a64",
+        "sha1": "b69cdc7c9a15e998414abe3a74f7d7f91ef85281",
+        "sha256": "bab462ad35e533a818560d2abdf7880cdb4223024a5303348423b0875e56ce54"
+      }
+    },
+    {
+      "id": 2,
+      "gender": "male",
+      "name": "Task 2",
+      "location": {
+        "street": "4040 nieuwegracht",
+        "city": "nissewaard",
+        "state": "overijssel",
+        "postcode": 54124
+      },
+      "email": "sjaak.draijer@example.com",
+      "login": {
+        "username": "brownpeacock639",
+        "password": "weiner",
+        "salt": "c9zUXSwF",
+        "md5": "72b8581db94ee452a61e961cf08aae40",
+        "sha1": "1bc2cfaf49cc2b81b4f6f6a628a70f9e345504d7",
+        "sha256": "e8195f4021bb79e6e90a128f9eed02ba4931f7255f1a120eb4364e1d7dc9674c"
+      }
+    },
+    {
+      "id": "14:51:26 GMT-0400 (EDT)",
+      "name": "Task 3"
+    },
+    {
+      "id": "15:01:20 GMT-0400 (EDT)",
+      "name": "Task 4"
+    }
+  ]
+}

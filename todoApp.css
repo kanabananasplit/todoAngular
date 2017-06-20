@@ -1,0 +1,86 @@
+/* Task to be addded from input textbox */
+#taskToBeAdded{
+	font size: 10px;
+	font-family: sans-serif;
+	width: 180px;
+	padding: 3px 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+#editButton{
+	cursor: pointer;
+}
+
+#deleteButton{
+	cursor: pointer;
+}
+
+.alert-success{
+	font-family: sans-serif;
+	color:#3c763d;
+	text-align: center;
+	background-color:#dff0d8;
+	border-color:#d6e9c6;
+	border-top-color:#c9e2b3;
+	width: 240px;
+}
+
+.alert-danger{
+	font-family: sans-serif;
+	color:#a94442;
+	background-color:#f2dede;
+	border-color:#ebccd1;
+	border-top-color:#e4b9c0;
+	width: 240px;
+}
+
+
+/* Button */
+#addTaskToTaskList, #saveTaskToTaskList{
+	font-size: 10px;
+	font-family: sans-serif;
+	background-color: #4CAF50; 
+	color: white;
+	padding: 3px 15px 3px 15px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Get rid of bullet points of unordered list added to tasks */
+#newTaskAddHere{
+	list-style-type: none;
+}
+
+/* Div where the new tasks are added to */
+#newTaskDiv{
+	font-size: 10px;
+	font-family: sans-serif;
+	width: 230px;
+	padding: 2px 5px;
+	border: 1px solid black;
+}
+
+/* "Edit | Delete" */
+li a{
+	color: #48D1CC;
+	float: right;
+	padding: 0px 2px 0px 2px;
+}
+
+/* Bolden "To-Do List" */
+#heading{
+	font-size:14px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/* Class that strikes text */
+.strikeThru{
+	text-decoration: line-through;
+}
+
+/* Class that returns text to normal */
+.noStrikeThru{
+	text-decoration: none;
+}
